@@ -9,7 +9,7 @@ class Photographer extends Model
 {
     use HasFactory;
     protected $appends = ['albums'];
-    protected $hidden = ['photos'];
+    protected $hidden = ['id', 'photos', 'created_at', 'updated_at'];
 
     public function photos() {
         return $this->hasMany(Photo::class);
