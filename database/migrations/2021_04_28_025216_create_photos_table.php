@@ -20,6 +20,7 @@ class CreatePhotosTable extends Migration
             $table->text('description');
             $table->string('img');
             $table->timestamp('date')->default(now());
+            $table->boolean('featured');
             $table->timestamps();
         });
     }
