@@ -27,7 +27,8 @@ class PhotoFactory extends Factory
             'title' => $this->faker->sentence,
             'description' => $this->faker->paragraph,
             'img' => $this->faker->imageUrl(640, 480),
-            'featured' => $this->faker->boolean
+            'featured' => $this->faker->boolean,
+            'date' => $this->faker->dateTime
         ];
     }
 }
