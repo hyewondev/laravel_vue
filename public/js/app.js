@@ -1921,6 +1921,197 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -2478,7 +2669,284 @@ var render = function() {
   return _c(
     "div",
     [
-      _vm._v("\n    Photographer\n\n    "),
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "gallery-container" }, [
+        _c("div", { staticClass: "grid gallery-grid cg-24 rg-24" }, [
+          _c("div", [
+            _vm._m(1),
+            _vm._v(" "),
+            _c("div", { staticClass: "gallery-text-card" }, [
+              _c(
+                "div",
+                { staticClass: "mt-2 text-gray-900 font-light-3 gallery-text" },
+                [
+                  _vm._v(
+                    "\n                        Laravel has wonderful, thorough documentation covering every aspect of the framework.  thorough documentation covering every aspect of the framework.\n                    "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "inline-flex mt-5" }, [
+                _c("div", { staticClass: "inline-block box-icon" }, [
+                  _c(
+                    "svg",
+                    {
+                      staticClass: "w-85 text-red",
+                      attrs: {
+                        fill: "currentColor",
+                        stroke: "currentColor",
+                        "stroke-width": "2",
+                        viewBox: "0 0 24 24"
+                      }
+                    },
+                    [
+                      _c("path", {
+                        attrs: {
+                          d:
+                            "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                        }
+                      })
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "inline-block text-gray-700 box-date text-right text-sm font-light-2"
+                  },
+                  [
+                    _vm._v(
+                      "\n                            2015-05-02\n                        "
+                    )
+                  ]
+                )
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", [
+            _vm._m(2),
+            _vm._v(" "),
+            _c("div", { staticClass: "gallery-text-card" }, [
+              _c(
+                "div",
+                { staticClass: "mt-2 text-gray-900 font-light-3 gallery-text" },
+                [
+                  _vm._v(
+                    "\n                        Laravel has wonderful, thorough documentation covering every aspect of the framework.\n                    "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "inline-flex mt-5" }, [
+                _c("div", { staticClass: "inline-block box-icon" }, [
+                  _c(
+                    "svg",
+                    {
+                      staticClass: "w-85 text-red",
+                      attrs: {
+                        fill: "currentColor",
+                        stroke: "currentColor",
+                        "stroke-width": "2",
+                        viewBox: "0 0 24 24"
+                      }
+                    },
+                    [
+                      _c("path", {
+                        attrs: {
+                          d:
+                            "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                        }
+                      })
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "inline-block text-gray-700 box-date text-right text-sm font-light-2"
+                  },
+                  [
+                    _vm._v(
+                      "\n                            2015-05-02\n                        "
+                    )
+                  ]
+                )
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _vm._m(3),
+          _vm._v(" "),
+          _c("div", [
+            _vm._m(4),
+            _vm._v(" "),
+            _c("div", { staticClass: "gallery-text-card" }, [
+              _c(
+                "div",
+                { staticClass: "mt-2 text-gray-900 font-light-3 gallery-text" },
+                [
+                  _vm._v(
+                    "\n                        Laravel has wonderful, thorough documentation covering every aspect of the framework.\n                    "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "inline-flex mt-5" }, [
+                _c("div", { staticClass: "inline-block box-icon" }, [
+                  _c(
+                    "svg",
+                    {
+                      staticClass: "w-85 text-red",
+                      attrs: {
+                        fill: "currentColor",
+                        stroke: "currentColor",
+                        "stroke-width": "2",
+                        viewBox: "0 0 24 24"
+                      }
+                    },
+                    [
+                      _c("path", {
+                        attrs: {
+                          d:
+                            "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                        }
+                      })
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "inline-block text-gray-700 box-date text-right text-sm font-light-2"
+                  },
+                  [
+                    _vm._v(
+                      "\n                            2015-05-02\n                        "
+                    )
+                  ]
+                )
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", [
+            _vm._m(5),
+            _vm._v(" "),
+            _c("div", { staticClass: "gallery-text-card" }, [
+              _c(
+                "div",
+                { staticClass: "mt-2 text-gray-900 font-light-3 gallery-text" },
+                [
+                  _vm._v(
+                    "\n                        Laravel has wonderful, thorough documentation covering every aspect of the framework.\n                    "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "inline-flex mt-5" }, [
+                _c("div", { staticClass: "inline-block box-icon" }, [
+                  _c(
+                    "svg",
+                    {
+                      staticClass: "w-85 text-red",
+                      attrs: {
+                        fill: "none",
+                        stroke: "currentColor",
+                        "stroke-width": "2",
+                        viewBox: "0 0 24 24"
+                      }
+                    },
+                    [
+                      _c("path", {
+                        attrs: {
+                          d:
+                            "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                        }
+                      })
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "inline-block text-gray-700 box-date text-right text-sm font-light-2"
+                  },
+                  [
+                    _vm._v(
+                      "\n                            2015-05-02\n                        "
+                    )
+                  ]
+                )
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", [
+            _vm._m(6),
+            _vm._v(" "),
+            _c("div", { staticClass: "gallery-text-card" }, [
+              _c(
+                "div",
+                { staticClass: "mt-2 text-gray-900 font-light-3 gallery-text" },
+                [
+                  _vm._v(
+                    "\n                        Laravel has wonderful, thorough documentation covering every aspect of the framework.\n                    "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "inline-flex mt-5" }, [
+                _c("div", { staticClass: "inline-block box-icon" }, [
+                  _c(
+                    "svg",
+                    {
+                      staticClass: "w-85 text-red",
+                      attrs: {
+                        fill: "currentColor",
+                        stroke: "currentColor",
+                        "stroke-width": "2",
+                        viewBox: "0 0 24 24"
+                      }
+                    },
+                    [
+                      _c("path", {
+                        attrs: {
+                          d:
+                            "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                        }
+                      })
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "inline-block text-gray-700 box-date text-right text-sm font-light-2"
+                  },
+                  [
+                    _vm._v(
+                      "\n                            2015-05-02\n                        "
+                    )
+                  ]
+                )
+              ])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
       _vm.isErrorVisible
         ? _c("Error", {
             attrs: { message: _vm.message },
@@ -2489,7 +2957,190 @@ var render = function() {
     1
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "info-card mb-25" }, [
+      _c("div", { staticClass: "info-card-body inline-flex" }, [
+        _c("div", { staticClass: "inline-block box-picture" }, [
+          _c("img", {
+            staticClass: "profile-img",
+            attrs: { src: "img/profile.jpeg", alt: "" }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "inline-block box-info" }, [
+          _c("h1", [_vm._v("Nick Reynolds")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "inline-flex text-sm leading-3" }, [
+            _c("div", { staticClass: "inline-block box-bio" }, [
+              _c("label", { staticClass: "text-gray-500 font-semibold" }, [
+                _vm._v(
+                  "\n                            Bio\n                        "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "text-gray-400 font-light-3" }, [
+                _vm._v(
+                  "\n                            Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the\n                        "
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inline-block box-contact" }, [
+              _c("label", { staticClass: "text-gray-500 font-semibold" }, [
+                _vm._v(
+                  "\n                            Phone\n                        "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "text-pink font-light-2" }, [
+                _vm._v(
+                  "\n                            555-555-5555\n                        "
+                )
+              ]),
+              _vm._v(" "),
+              _c("label", { staticClass: "text-gray-500 font-semibold" }, [
+                _vm._v(
+                  "\n                            Email\n                        "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "text-pink font-light-2" }, [
+                _vm._v(
+                  "\n                            nick.reynolds@domain.co\n                        "
+                )
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "gallery-img-card" }, [
+      _c("img", {
+        staticClass: "gallery-img",
+        attrs: { src: "img/landscape1.jpeg", alt: "" }
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "gallery-img-text" }, [
+        _c("h2", [_vm._v("Nandhaka Pieris")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "gallery-img-card" }, [
+      _c("img", {
+        staticClass: "gallery-img",
+        attrs: { src: "img/landscape2.jpeg", alt: "" }
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "gallery-img-text" }, [
+        _c("h2", [_vm._v("Nandhaka Pieris")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("div", { staticClass: "gallery-img-card" }, [
+        _c("img", {
+          staticClass: "gallery-img",
+          attrs: { src: "img/landscape3.jpeg", alt: "" }
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "gallery-img-text" }, [
+          _c("h2", [_vm._v("Nandhaka Pieris")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "gallery-text-card" }, [
+        _c(
+          "div",
+          { staticClass: "mt-2 text-gray-900 font-light-3 gallery-text" },
+          [
+            _vm._v(
+              "\n                        Laravel has wonderful, thorough documentation covering every aspect of the framework.\n                    "
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "inline-flex mt-5" }, [
+          _c("div", { staticClass: "inline-block box-icon" }),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "inline-block text-gray-700 box-date text-right text-sm font-light-2"
+            },
+            [
+              _vm._v(
+                "\n                            2015-05-02\n                        "
+              )
+            ]
+          )
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "gallery-img-card" }, [
+      _c("img", {
+        staticClass: "gallery-img",
+        attrs: { src: "img/landscape1.jpeg", alt: "" }
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "gallery-img-text" }, [
+        _c("h2", [_vm._v("Nandhaka Pieris")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "gallery-img-card" }, [
+      _c("img", {
+        staticClass: "gallery-img",
+        attrs: { src: "img/landscape2.jpeg", alt: "" }
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "gallery-img-text" }, [
+        _c("h2", [_vm._v("Nandhaka Pieris")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "gallery-img-card" }, [
+      _c("img", {
+        staticClass: "gallery-img",
+        attrs: { src: "img/landscape3.jpeg", alt: "" }
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "gallery-img-text" }, [
+        _c("h2", [_vm._v("Nandhaka Pieris")])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
