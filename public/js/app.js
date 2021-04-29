@@ -11957,6 +11957,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _Photo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Photo */ "./resources/js/components/Photo.vue");
 //
 //
 //
@@ -11996,6 +11997,47 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: {
+    albums: {
+      type: Array,
+      required: true
+    }
+  },
+  components: {
+    Photo: _Photo__WEBPACK_IMPORTED_MODULE_0__.default
+  },
+  data: function data() {
+    return {
+      isPhotoModalVisible: false,
+      selectedPhoto: {}
+    };
+  },
+  methods: {
+    showPhoto: function showPhoto(data) {
+      this.selectedPhoto = data;
+      this.isPhotoModalVisible = true;
+    },
+    closePhoto: function closePhoto() {
+      this.isPhotoModalVisible = false;
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Photo.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Photo.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 //
 //
 //
@@ -12041,80 +12083,20 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: 'Photo',
+  props: {
+    photo: {
+      type: Object,
+      required: true
+    }
+  },
+  methods: {
+    close: function close() {
+      this.$emit('close');
+    }
+  }
+});
 
 /***/ }),
 
@@ -12200,8 +12182,7 @@ __webpack_require__.r(__webpack_exports__);
     var _this = this;
 
     _services_Service__WEBPACK_IMPORTED_MODULE_0__.default.getPhotographer(1).then(function (response) {
-      console.log(response);
-      _this.event = response.data;
+      _this.photographer = response.data;
     })["catch"](function (error) {
       _this.message = error.response.data.message;
       _this.isErrorVisible = true;
@@ -12604,6 +12585,45 @@ component.options.__file = "resources/js/components/Gallery.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/Photo.vue":
+/*!*******************************************!*\
+  !*** ./resources/js/components/Photo.vue ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Photo_vue_vue_type_template_id_c0696452___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Photo.vue?vue&type=template&id=c0696452& */ "./resources/js/components/Photo.vue?vue&type=template&id=c0696452&");
+/* harmony import */ var _Photo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Photo.vue?vue&type=script&lang=js& */ "./resources/js/components/Photo.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+  _Photo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _Photo_vue_vue_type_template_id_c0696452___WEBPACK_IMPORTED_MODULE_0__.render,
+  _Photo_vue_vue_type_template_id_c0696452___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Photo.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/Photographer.vue":
 /*!**************************************************!*\
   !*** ./resources/js/components/Photographer.vue ***!
@@ -12675,6 +12695,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/Photo.vue?vue&type=script&lang=js&":
+/*!********************************************************************!*\
+  !*** ./resources/js/components/Photo.vue?vue&type=script&lang=js& ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Photo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Photo.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Photo.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Photo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+
+/***/ }),
+
 /***/ "./resources/js/components/Photographer.vue?vue&type=script&lang=js&":
 /*!***************************************************************************!*\
   !*** ./resources/js/components/Photographer.vue?vue&type=script&lang=js& ***!
@@ -12721,6 +12757,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Gallery_vue_vue_type_template_id_5761a7b7___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Gallery_vue_vue_type_template_id_5761a7b7___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Gallery.vue?vue&type=template&id=5761a7b7& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Gallery.vue?vue&type=template&id=5761a7b7&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Photo.vue?vue&type=template&id=c0696452&":
+/*!**************************************************************************!*\
+  !*** ./resources/js/components/Photo.vue?vue&type=template&id=c0696452& ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Photo_vue_vue_type_template_id_c0696452___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Photo_vue_vue_type_template_id_c0696452___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Photo_vue_vue_type_template_id_c0696452___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Photo.vue?vue&type=template&id=c0696452& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Photo.vue?vue&type=template&id=c0696452&");
 
 
 /***/ }),
@@ -12817,394 +12870,227 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "gallery-container" }, [
-    _c("div", { staticClass: "grid gallery-grid cg-24 rg-24" }, [
-      _c("div", [
-        _vm._m(0),
-        _vm._v(" "),
-        _c("div", { staticClass: "gallery-text-card" }, [
-          _c(
-            "div",
-            { staticClass: "mt-2 text-gray-900 font-light-3 gallery-text" },
-            [
-              _vm._v(
-                "\n                    Laravel has wonderful, thorough documentation covering every aspect of the framework.  thorough documentation covering every aspect of the framework.\n                "
-              )
-            ]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "inline-flex mt-5" }, [
-            _c("div", { staticClass: "inline-block box-icon" }, [
-              _c(
-                "svg",
-                {
-                  staticClass: "w-85 text-red",
-                  attrs: {
-                    fill: "currentColor",
-                    stroke: "currentColor",
-                    "stroke-width": "2",
-                    viewBox: "0 0 24 24"
-                  }
-                },
-                [
-                  _c("path", {
-                    attrs: {
-                      d:
-                        "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                    }
-                  })
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass:
-                  "inline-block text-gray-700 box-date text-right text-sm font-light-2"
-              },
-              [
-                _vm._v(
-                  "\n                        2015-05-02\n                    "
-                )
-              ]
-            )
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", [
-        _vm._m(1),
-        _vm._v(" "),
-        _c("div", { staticClass: "gallery-text-card" }, [
-          _c(
-            "div",
-            { staticClass: "mt-2 text-gray-900 font-light-3 gallery-text" },
-            [
-              _vm._v(
-                "\n                    Laravel has wonderful, thorough documentation covering every aspect of the framework.\n                "
-              )
-            ]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "inline-flex mt-5" }, [
-            _c("div", { staticClass: "inline-block box-icon" }, [
-              _c(
-                "svg",
-                {
-                  staticClass: "w-85 text-red",
-                  attrs: {
-                    fill: "currentColor",
-                    stroke: "currentColor",
-                    "stroke-width": "2",
-                    viewBox: "0 0 24 24"
-                  }
-                },
-                [
-                  _c("path", {
-                    attrs: {
-                      d:
-                        "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                    }
-                  })
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass:
-                  "inline-block text-gray-700 box-date text-right text-sm font-light-2"
-              },
-              [
-                _vm._v(
-                  "\n                        2015-05-02\n                    "
-                )
-              ]
-            )
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _vm._m(2),
-      _vm._v(" "),
-      _c("div", [
-        _vm._m(3),
-        _vm._v(" "),
-        _c("div", { staticClass: "gallery-text-card" }, [
-          _c(
-            "div",
-            { staticClass: "mt-2 text-gray-900 font-light-3 gallery-text" },
-            [
-              _vm._v(
-                "\n                    Laravel has wonderful, thorough documentation covering every aspect of the framework.\n                "
-              )
-            ]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "inline-flex mt-5" }, [
-            _c("div", { staticClass: "inline-block box-icon" }, [
-              _c(
-                "svg",
-                {
-                  staticClass: "w-85 text-red",
-                  attrs: {
-                    fill: "currentColor",
-                    stroke: "currentColor",
-                    "stroke-width": "2",
-                    viewBox: "0 0 24 24"
-                  }
-                },
-                [
-                  _c("path", {
-                    attrs: {
-                      d:
-                        "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                    }
-                  })
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass:
-                  "inline-block text-gray-700 box-date text-right text-sm font-light-2"
-              },
-              [
-                _vm._v(
-                  "\n                        2015-05-02\n                    "
-                )
-              ]
-            )
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", [
-        _vm._m(4),
-        _vm._v(" "),
-        _c("div", { staticClass: "gallery-text-card" }, [
-          _c(
-            "div",
-            { staticClass: "mt-2 text-gray-900 font-light-3 gallery-text" },
-            [
-              _vm._v(
-                "\n                    Laravel has wonderful, thorough documentation covering every aspect of the framework.\n                "
-              )
-            ]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "inline-flex mt-5" }, [
-            _c("div", { staticClass: "inline-block box-icon" }, [
-              _c(
-                "svg",
-                {
-                  staticClass: "w-85 text-red",
-                  attrs: {
-                    fill: "none",
-                    stroke: "currentColor",
-                    "stroke-width": "2",
-                    viewBox: "0 0 24 24"
-                  }
-                },
-                [
-                  _c("path", {
-                    attrs: {
-                      d:
-                        "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                    }
-                  })
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass:
-                  "inline-block text-gray-700 box-date text-right text-sm font-light-2"
-              },
-              [
-                _vm._v(
-                  "\n                        2015-05-02\n                    "
-                )
-              ]
-            )
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", [
-        _vm._m(5),
-        _vm._v(" "),
-        _c("div", { staticClass: "gallery-text-card" }, [
-          _c(
-            "div",
-            { staticClass: "mt-2 text-gray-900 font-light-3 gallery-text" },
-            [
-              _vm._v(
-                "\n                    Laravel has wonderful, thorough documentation covering every aspect of the framework.\n                "
-              )
-            ]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "inline-flex mt-5" }, [
-            _c(
-              "div",
-              { staticClass: "inline-block box-icon" },
-              [
-                _c("font-awesome-icon", {
-                  staticClass: "text-red",
-                  attrs: { icon: "heart" }
-                })
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass:
-                  "inline-block text-gray-700 box-date text-right text-sm font-light-2"
-              },
-              [
-                _vm._v(
-                  "\n                        2015-05-02\n                    "
-                )
-              ]
-            )
-          ])
-        ])
-      ])
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "gallery-img-card" }, [
-      _c("img", {
-        staticClass: "gallery-img",
-        attrs: { src: "img/landscape1.jpeg", alt: "" }
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "gallery-img-text" }, [
-        _c("h2", [_vm._v("Nandhaka Pieris")])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "gallery-img-card" }, [
-      _c("img", {
-        staticClass: "gallery-img",
-        attrs: { src: "img/landscape2.jpeg", alt: "" }
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "gallery-img-text" }, [
-        _c("h2", [_vm._v("Nandhaka Pieris")])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("div", { staticClass: "gallery-img-card" }, [
-        _c("img", {
-          staticClass: "gallery-img",
-          attrs: { src: "img/landscape3.jpeg", alt: "" }
-        }),
-        _vm._v(" "),
-        _c("div", { staticClass: "gallery-img-text" }, [
-          _c("h2", [_vm._v("Nandhaka Pieris")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "gallery-text-card" }, [
+  return _c(
+    "div",
+    [
+      _c("div", { staticClass: "gallery-container" }, [
         _c(
           "div",
-          { staticClass: "mt-2 text-gray-900 font-light-3 gallery-text" },
-          [
-            _vm._v(
-              "\n                    Laravel has wonderful, thorough documentation covering every aspect of the framework.\n                "
-            )
-          ]
-        ),
+          { staticClass: "grid gallery-grid cg-24 rg-24" },
+          _vm._l(_vm.albums, function(album, index) {
+            return _c("div", { key: _vm.albums.id }, [
+              _c("div", { staticClass: "gallery-img-card" }, [
+                _c("img", {
+                  staticClass: "gallery-img",
+                  attrs: { src: album.img },
+                  on: {
+                    click: function($event) {
+                      return _vm.showPhoto(album)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "gallery-img-text",
+                    on: {
+                      click: function($event) {
+                        return _vm.showPhoto(album)
+                      }
+                    }
+                  },
+                  [_c("h2", [_vm._v(_vm._s(album.title))])]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "gallery-text-card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "mt-2 text-gray-900 font-light-3 gallery-text"
+                  },
+                  [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(album.description) +
+                        "\n                    "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "inline-flex mt-5" }, [
+                  _c(
+                    "div",
+                    { staticClass: "inline-block box-icon" },
+                    [
+                      _c("font-awesome-icon", {
+                        directives: [
+                          {
+                            name: "show",
+                            rawName: "v-show",
+                            value: album.featured,
+                            expression: "album.featured"
+                          }
+                        ],
+                        staticClass: "text-red",
+                        attrs: { icon: "heart" }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "inline-block text-gray-700 box-date text-right text-sm font-light-2"
+                    },
+                    [
+                      _vm._v(
+                        "\n                            " +
+                          _vm._s(album.date) +
+                          "\n                        "
+                      )
+                    ]
+                  )
+                ])
+              ])
+            ])
+          }),
+          0
+        )
+      ]),
+      _vm._v(" "),
+      _c("Photo", {
+        directives: [
+          {
+            name: "show",
+            rawName: "v-show",
+            value: _vm.isPhotoModalVisible,
+            expression: "isPhotoModalVisible"
+          }
+        ],
+        attrs: { photo: _vm.selectedPhoto },
+        on: { close: _vm.closePhoto }
+      })
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Photo.vue?vue&type=template&id=c0696452&":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Photo.vue?vue&type=template&id=c0696452& ***!
+  \*****************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "modal-backdrop" }, [
+    _c("div", { staticClass: "modal" }, [
+      _c("header", { staticClass: "modal-header" }, [
+        _c("h2", { staticClass: "header text-gray-700" }, [
+          _vm._v(
+            "\n                " + _vm._s(_vm.photo.title) + "\n            "
+          )
+        ]),
         _vm._v(" "),
-        _c("div", { staticClass: "inline-flex mt-5" }, [
-          _c("div", { staticClass: "inline-block box-icon" }),
+        _c(
+          "button",
+          {
+            staticClass: "btn-x",
+            attrs: { type: "button" },
+            on: { click: _vm.close }
+          },
+          [_vm._v("\n                x\n            ")]
+        )
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "modal-body" }, [
+        _c("img", { attrs: { src: _vm.photo.img, alt: _vm.photo.title } }),
+        _vm._v(" "),
+        _c("div", { staticClass: "inline-flex" }, [
+          _c(
+            "div",
+            { staticClass: "inline-block box-icon" },
+            [
+              _c("font-awesome-icon", {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.photo.featured,
+                    expression: "photo.featured"
+                  }
+                ],
+                staticClass: "text-red",
+                attrs: { icon: "heart" }
+              })
+            ],
+            1
+          ),
           _vm._v(" "),
           _c(
             "div",
             {
               staticClass:
-                "inline-block text-gray-700 box-date text-right text-sm font-light-2"
+                "inline-block text-gray-900 box-date text-right text-sm font-light-2"
             },
             [
               _vm._v(
-                "\n                        2015-05-02\n                    "
+                "\n                    " +
+                  _vm._s(_vm.photo.date) +
+                  "\n                "
               )
             ]
           )
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "gallery-img-card" }, [
-      _c("img", {
-        staticClass: "gallery-img",
-        attrs: { src: "img/landscape1.jpeg", alt: "" }
-      }),
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "body-text text-sm scroll text-gray-700 font-light-3"
+          },
+          [
+            _vm._v(
+              "\n                " +
+                _vm._s(_vm.photo.description) +
+                "\n            "
+            )
+          ]
+        )
+      ]),
       _vm._v(" "),
-      _c("div", { staticClass: "gallery-img-text" }, [
-        _c("h2", [_vm._v("Nandhaka Pieris")])
+      _c("footer", { staticClass: "modal-footer" }, [
+        _c(
+          "button",
+          {
+            staticClass: "btn-close",
+            attrs: { type: "button" },
+            on: { click: _vm.close }
+          },
+          [_vm._v("\n                Close\n            ")]
+        )
       ])
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "gallery-img-card" }, [
-      _c("img", {
-        staticClass: "gallery-img",
-        attrs: { src: "img/landscape2.jpeg", alt: "" }
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "gallery-img-text" }, [
-        _c("h2", [_vm._v("Nandhaka Pieris")])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "gallery-img-card" }, [
-      _c("img", {
-        staticClass: "gallery-img",
-        attrs: { src: "img/landscape3.jpeg", alt: "" }
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "gallery-img-text" }, [
-        _c("h2", [_vm._v("Nandhaka Pieris")])
-      ])
-    ])
-  }
-]
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -13230,9 +13116,86 @@ var render = function() {
   return _c(
     "div",
     [
-      _vm._m(0),
+      _c("div", { staticClass: "info-card mb-25" }, [
+        _vm.photographer
+          ? _c("div", { staticClass: "info-card-body inline-flex" }, [
+              _c("div", { staticClass: "inline-block box-picture" }, [
+                _c("img", {
+                  staticClass: "profile-img",
+                  attrs: { src: _vm.photographer.profile_picture }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "inline-block box-info" }, [
+                _c("h1", [_vm._v(_vm._s(_vm.photographer.name))]),
+                _vm._v(" "),
+                _c("div", { staticClass: "inline-flex text-sm leading-3" }, [
+                  _c("div", { staticClass: "inline-block box-bio" }, [
+                    _c(
+                      "label",
+                      { staticClass: "text-gray-500 font-semibold" },
+                      [
+                        _vm._v(
+                          "\n                            Bio\n                        "
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "text-gray-400 font-light-3" }, [
+                      _vm._v(
+                        "\n                            " +
+                          _vm._s(_vm.photographer.bio) +
+                          "\n                        "
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inline-block box-contact" }, [
+                    _c(
+                      "label",
+                      { staticClass: "text-gray-500 font-semibold" },
+                      [
+                        _vm._v(
+                          "\n                            Phone\n                        "
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "text-pink font-light-2" }, [
+                      _vm._v(
+                        "\n                            " +
+                          _vm._s(_vm.photographer.phone) +
+                          "\n                        "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "label",
+                      { staticClass: "text-gray-500 font-semibold" },
+                      [
+                        _vm._v(
+                          "\n                            Email\n                        "
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "text-pink font-light-2" }, [
+                      _vm._v(
+                        "\n                            " +
+                          _vm._s(_vm.photographer.email) +
+                          "\n                        "
+                      )
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          : _vm._e()
+      ]),
       _vm._v(" "),
-      _c("Gallery"),
+      _vm.photographer
+        ? _c("Gallery", { attrs: { albums: _vm.photographer.albums } })
+        : _vm._e(),
       _vm._v(" "),
       _vm.isErrorVisible
         ? _c("Error", {
@@ -13244,69 +13207,7 @@ var render = function() {
     1
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "info-card mb-25" }, [
-      _c("div", { staticClass: "info-card-body inline-flex" }, [
-        _c("div", { staticClass: "inline-block box-picture" }, [
-          _c("img", {
-            staticClass: "profile-img",
-            attrs: { src: "img/profile.jpeg", alt: "" }
-          })
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inline-block box-info" }, [
-          _c("h1", [_vm._v("Nick Reynolds")]),
-          _vm._v(" "),
-          _c("div", { staticClass: "inline-flex text-sm leading-3" }, [
-            _c("div", { staticClass: "inline-block box-bio" }, [
-              _c("label", { staticClass: "text-gray-500 font-semibold" }, [
-                _vm._v(
-                  "\n                            Bio\n                        "
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "text-gray-400 font-light-3" }, [
-                _vm._v(
-                  "\n                            Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the\n                        "
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inline-block box-contact" }, [
-              _c("label", { staticClass: "text-gray-500 font-semibold" }, [
-                _vm._v(
-                  "\n                            Phone\n                        "
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "text-pink font-light-2" }, [
-                _vm._v(
-                  "\n                            555-555-5555\n                        "
-                )
-              ]),
-              _vm._v(" "),
-              _c("label", { staticClass: "text-gray-500 font-semibold" }, [
-                _vm._v(
-                  "\n                            Email\n                        "
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "text-pink font-light-2" }, [
-                _vm._v(
-                  "\n                            nick.reynolds@domain.co\n                        "
-                )
-              ])
-            ])
-          ])
-        ])
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
