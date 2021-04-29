@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
         for($i = 1; $i <= 6; $i++) {
             \App\Models\Photo::factory()->create([
                 'photographer_id' => $photographer->id,
-                'img' => 'landscape'. $i .'.jpeg'
+                'img' => 'img/landscape'. $i .'.jpeg'
             ]);
         }
     }
