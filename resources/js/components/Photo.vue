@@ -24,7 +24,7 @@
                         {{ photo.date }}
                     </div>
                 </div>
-                <div class="body-text text-sm scroll text-gray-700 font-light-3">
+                <div class="body-text text-sm scroll text-gray-800 font-light-3">
                     {{ photo.description }}
                 </div>
 

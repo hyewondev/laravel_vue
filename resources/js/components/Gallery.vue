@@ -20,7 +20,7 @@
                             <div class="inline-block box-icon">
                                 <font-awesome-icon icon="heart" class="text-red" v-show="album.featured" />
                             </div>
-                            <div class="inline-block text-gray-700 box-date text-right text-sm font-light-2">
+                            <div class="inline-block text-gray-800 box-date text-right text-sm font-light-2">
                                 {{ album.date }}
                             </div>
                         </div>

@@ -12944,7 +12944,7 @@ var render = function() {
                     "div",
                     {
                       staticClass:
-                        "inline-block text-gray-700 box-date text-right text-sm font-light-2"
+                        "inline-block text-gray-800 box-date text-right text-sm font-light-2"
                     },
                     [
                       _vm._v(
@@ -13064,7 +13064,7 @@ var render = function() {
         _c(
           "div",
           {
-            staticClass: "body-text text-sm scroll text-gray-700 font-light-3"
+            staticClass: "body-text text-sm scroll text-gray-800 font-light-3"
           },
           [
             _vm._v(
@@ -13133,7 +13133,7 @@ var render = function() {
                   _c("div", { staticClass: "inline-block box-bio" }, [
                     _c(
                       "label",
-                      { staticClass: "text-gray-500 font-semibold" },
+                      { staticClass: "text-gray-600 font-semibold" },
                       [
                         _vm._v(
                           "\n                            Bio\n                        "
@@ -13141,7 +13141,7 @@ var render = function() {
                       ]
                     ),
                     _vm._v(" "),
-                    _c("div", { staticClass: "text-gray-400 font-light-3" }, [
+                    _c("div", { staticClass: "text-gray-500 font-light-4" }, [
                       _vm._v(
                         "\n                            " +
                           _vm._s(_vm.photographer.bio) +
@@ -13153,7 +13153,7 @@ var render = function() {
                   _c("div", { staticClass: "inline-block box-contact" }, [
                     _c(
                       "label",
-                      { staticClass: "text-gray-500 font-semibold" },
+                      { staticClass: "text-gray-600 font-semibold" },
                       [
                         _vm._v(
                           "\n                            Phone\n                        "
@@ -13171,7 +13171,7 @@ var render = function() {
                     _vm._v(" "),
                     _c(
                       "label",
-                      { staticClass: "text-gray-500 font-semibold" },
+                      { staticClass: "text-gray-600 font-semibold" },
                       [
                         _vm._v(
                           "\n                            Email\n                        "

@@ -146,6 +146,9 @@ h1, h2, h3 {
 .font-light-3{
     font-weight: 300;
 }
+.font-light-4{
+    font-weight: 400;
+}
 .font-semibold{
     font-weight: 600;
 }
