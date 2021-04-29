@@ -12,8 +12,12 @@
 
     </head>
     <body>
-        <div id="app">
-            <router-view></router-view>
+        <div class="body-container">
+            <div class="container">
+                <div id="app">
+                    <router-view></router-view>
+                </div>
+            </div>
         </div>
 
         <script src="../js/app.js"></script>
