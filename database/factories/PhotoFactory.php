@@ -24,7 +24,7 @@ class PhotoFactory extends Factory
     {
         return [
             'photographer_id' => Photographer::factory(),
-            'title' => $this->faker->sentence,
+            'title' => $this->faker->streetName,
             'description' => $this->faker->paragraph,
             'img' => $this->faker->imageUrl(640, 480),
             'featured' => $this->faker->boolean,
