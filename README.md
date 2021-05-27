@@ -1,5 +1,5 @@
 
-# Modzee Skill Test
+# Modzee Test
 When I first saw the wireframe image, I was confusing the heart icon is for user preference, so I thought Users and Preferences tables were needed additionally. However, I realized that it was not when I checked the json file, hence I created only Photographers and Photos tables.
 
 I also added a modal screen because most photo albums provide showing enlarged photo and more description.
