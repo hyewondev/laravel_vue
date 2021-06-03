@@ -13,7 +13,7 @@ I also added a modal screen because most photo albums provide showing enlarged p
 ## Installing 
 
 ```shell
-$ git clone git@github.com:hyewondev/modzee_test.git
+$ git clone https://github.com/hyewondev/modzee_test.git
 
 $ cp .env.example .env
 
