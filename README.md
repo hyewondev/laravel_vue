@@ -10,7 +10,7 @@
 ## Installing 
 
 ```shell
-$ git clone https://github.com/hyewondev/modzee_test.git
+$ git clone https://github.com/hyewondev/laravel_vue.git
 
 $ cp .env.example .env
 
